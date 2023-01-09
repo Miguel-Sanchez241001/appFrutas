@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="80dp"
+    tools:context=".RegistroUser">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Registro"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:fontFamily="@font/fredoka"/>
+
+    <EditText
+        android:id="@+id/Re_edtNombre"
+        android:fontFamily="@font/fredoka"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/sombra"
+        android:paddingStart="15dp"
+        android:hint="Nombre"
+        android:layout_marginTop="30dp"
+
+        />
+    <EditText
+        android:id="@+id/Re_edtApellido"
+        android:fontFamily="@font/fredoka"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_shape"
+        android:hint="Apellido"
+        android:paddingStart="15dp"
+        android:layout_marginTop="30dp"
+
+        />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/Re_edtCorreo"
+        android:fontFamily="@font/fredoka"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="Correo"
+        android:background="@drawable/sombra"
+        android:paddingStart="15dp"
+        android:layout_marginTop="30dp"
+
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/Re_edtpassword"
+        android:fontFamily="@font/fredoka"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_shape"
+        android:layout_height="46dp"
+        android:hint="Contraseña"
+        android:paddingStart="15dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/Re_btnRegitro"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F5587B"
+        android:backgroundTintMode="screen"
+        android:fontFamily="@font/fredoka"
+        android:text="Registrarme"
+        android:textAllCaps="false"
+        app:cornerRadius="30px"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

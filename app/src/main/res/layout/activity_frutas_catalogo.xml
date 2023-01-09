@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+
+    tools:context=".FrutasCatalogo">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F5587B"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Fruteria Sanchez"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/FruCat_userNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/fredoka"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/FruCat_btnSalir"
+            android:layout_width="77dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/logout" />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/fredoka"
+        android:text="Frutas"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+
+            android:id="@+id/FruCat_btnTemporada"
+            android:layout_width="wrap_content"
+            android:padding="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:fontFamily="@font/fredoka"
+            android:text="Temporada"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#101010"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/FruCat_btnorganico"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:text="Organicas"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#121111"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/FruCat_btnVerano"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:text="Verano"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#151515"
+            app:strokeWidth="1dp" />
+        />
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/M_GrView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:numColumns="2" />
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center|left"
+            android:background="@drawable/btn_shape"
+            android:textDirection="inherit"
+            android:id="@+id/FruCat_BtnVolver"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:backgroundTint="#ffffff"
+            android:drawableRight="@drawable/fecha_login"
+            android:text="Enviar Pedido"
+            android:id="@+id/FruCat_btnEnviarPedido"
+
+            android:textColor="#000000"
+            app:cornerRadius="35dp"
+            app:strokeColor="#131313"
+            app:strokeWidth="1dp" />
+
+    </FrameLayout>
+</LinearLayout>

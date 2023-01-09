@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextAppearance.Compat.Notification.Info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalleFruta">
+
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F5587B"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Fruteria Sanchez"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Detalle_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/Detalle_btnLogut"
+            android:layout_width="77dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/logout" />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/fredoka"
+        android:text="Frutas"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+<FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+
+            android:id="@+id/Detalle_btnTemporada"
+            android:layout_width="wrap_content"
+            android:padding="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:fontFamily="@font/fredoka"
+            android:text="Temporada"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#101010"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/Detalle_btnOrganico"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:text="Organicas"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#121111"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/Detalle_btnVerano"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="screen"
+            android:text="Verano"
+            android:textAllCaps="false"
+            android:textColor="#070707"
+            app:cornerRadius="35dp"
+            app:strokeColor="#151515"
+            app:strokeWidth="1dp" />
+        />
+
+    </FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        >
+
+        <TextView
+            android:id="@+id/Deta_nomItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka"
+            android:text="Piña"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="130dp">
+        <ImageView
+            android:id="@+id/Deta_Item2"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:src="@drawable/pina_cat"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+
+            />
+            <ProgressBar
+                android:id="@+id/Deta_proItem2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ffff"
+                />
+
+        </FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/add"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mas"/>
+    <TextView
+        android:id="@+id/Deta_preItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:fontFamily="@font/fredoka"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="s/.3.5 Kg"/>
+
+</FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/Deta_nomItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka"
+            android:text="Naranja"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/Deta_Item1"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:src="@drawable/naranja_cat"
+                android:scaleType="fitCenter"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+
+                />
+            <ProgressBar
+                android:id="@+id/Deta_proItem1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ffff"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/add"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mas" />
+
+            <TextView
+                android:id="@+id/Deta_preItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:fontFamily="@font/fredoka"
+                android:text="s/.2.5 Kg"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/Deta_nomItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fredoka"
+                android:text="Fresa"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="130dp">
+
+                <ImageView
+                    android:id="@+id/Deta_Item4"
+                    android:layout_width="180dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/fresa_cat"
+                    android:scaleType="fitCenter"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"/>
+                <ProgressBar
+                    android:id="@+id/Deta_proItem4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#ffff"
+                    />
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mas"/>
+
+                <TextView
+                    android:id="@+id/Deta_preItem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:fontFamily="@font/fredoka"
+                    android:text="s/.3.5 Kg"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/Deta_nomItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:fontFamily="@font/fredoka"
+                android:text="Sandia"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/Deta_Item3"
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:src="@drawable/sandia_cat"
+                android:scaleType="fitCenter"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+
+                />
+                <ProgressBar
+                    android:id="@+id/Deta_proItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#ffff"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mas"/>
+                <TextView
+                    android:id="@+id/Deta_preItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:fontFamily="@font/fredoka"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:text="s/.3.5 Kg"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center|left"
+            android:background="@drawable/btn_shape"
+            android:textDirection="inherit"
+            android:id="@+id/Detalle_btnRegresar"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:backgroundTint="#ffffff"
+            android:drawableRight="@drawable/fecha_login"
+            android:text="Enviar Pedido"
+            android:id="@+id/Detalle_btnEnviarPedido"
+
+            android:textColor="#000000"
+            app:cornerRadius="35dp"
+            app:strokeColor="#131313"
+            app:strokeWidth="1dp" />
+
+    </FrameLayout>
+</LinearLayout>

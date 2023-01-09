@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "764304624462",
+    "firebase_url": "https://frutishop-9035b-default-rtdb.firebaseio.com",
+    "project_id": "frutishop-9035b",
+    "storage_bucket": "frutishop-9035b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764304624462:android:9d1659170902adfee56c1f",
+        "android_client_info": {
+          "package_name": "com.example.proyectoappmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764304624462-58hqil2ds9oj78c052hgifk703bai5kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWAVVpKjbBsc83CLL_9p5cHgtqSmMwy_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764304624462-58hqil2ds9oj78c052hgifk703bai5kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaFrutas">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F5587B"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Fruteria Sanchez"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Fruta_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/fredoka"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/list_btnLogut"
+            android:layout_width="77dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/logout" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/list_imgF"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_gravity="center"
+
+                />
+            <ProgressBar
+                android:id="@+id/list_progres"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="#ffff"
+                />
+
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/Fruta_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre fruta"
+            android:background="@drawable/btn_shape"
+            android:padding="15dp"
+            android:textColorHint="#000000"
+            />
+        <EditText
+            android:id="@+id/Fruta_Precio"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:textColorHint="#000000"
+            android:padding="15dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/btn_shape"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

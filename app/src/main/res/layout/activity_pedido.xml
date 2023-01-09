@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pedido">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F5587B"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Fruteria Sanchez"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Pedi_Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/fredoka"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/Pedi_btnSalir"
+            android:layout_width="77dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/logout" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/fredoka"
+        android:text="MI PEDIDO"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <GridView
+        android:id="@+id/Pedi_GrView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:numColumns="1" />
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_shape"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:textSize="18sp"
+            android:text="Total:"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/Pedi_Total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingEnd="15dp"
+            android:textSize="18sp"
+            android:text="S/. 26.50"
+            android:textColor="#000000"
+            />
+    </FrameLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:backgroundTint="#ffffff"
+        android:drawableRight="@drawable/fecha_login"
+        android:text="Ver Detalle Pedido"
+        android:id="@+id/Pedi_btnVerDetalle"
+        android:textColor="#000000"
+        app:cornerRadius="35dp"
+        app:strokeColor="#131313"
+        app:strokeWidth="1dp" />
+
+</LinearLayout>
